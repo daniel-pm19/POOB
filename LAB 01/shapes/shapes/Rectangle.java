@@ -171,6 +171,10 @@ public class Rectangle{
         yPosition= newyPosition;
         draw();
     }
+    
+    public int getxPosition(){
+        return xPosition;
+    }
 
     /*
      * Draw the rectangle with current specifications on screen.
