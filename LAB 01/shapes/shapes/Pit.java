@@ -1,120 +1,172 @@
 import java.util.ArrayList;
-/**
- * Write a description of class Pit here.
- * 
- * @author (Daniel Patiño y Daniel Useche) 
- * @version (a version number or a date)
- */
-public class Pit{
-    private Rectangle rectangulo1;
-    private Rectangle rectangulo2;
-    private ArrayList <Rectangle> Seeds= new ArrayList<>();
-    private int x=80;
-    private int y=25;
-    private int j=0;
-    private int k=0;
-    private int seedxPosition;
-    private int seedyPosition;
 
+/**
+ * A pit are a set of squares and rectangles that can be manipulated and that draws itself on a canvas.
+ * 
+ * @authors  Daniel Useche & Daniel Patiño
+ * @version 1.0  (February 2025)
+ */
+
+class Pit {
+    private Rectangle rect1, rect2;
+    private ArrayList<Rectangle> seeds;
+    private int x, y;
+    private String pitColor, seedColor;
+    private boolean isBig;
+
+    /**
+     * In this phase, we create and define the squares, their color, size(1 big and 1 that is the half of the size of the big) and the array that will contains the seeds.
+     * We also define color of each square and seeds color (This will help us to distinguish the teams).
+     */   
+    public Pit(boolean isBig, boolean isNorth) {
+        rect1 = new Rectangle();
+        rect2 = new Rectangle();
+        seeds = new ArrayList<>();
+        this.isBig = isBig;
+
+        pitColor = isNorth ? "red" : "blue";
+        seedColor = isNorth ? "yellow" : "green"; // Color fijo de semillas por equipo.
+
+        if (isBig) {
+            rect1.changeSize(195, 100);
+            rect2.changeSize(185, 90);
+        } else {
+            rect1.changeSize(100, 100);
+            rect2.changeSize(90, 90);
+        }
+
+        rect1.changeColor("black");
+        rect2.changeColor(pitColor);
+    }
     
     /**
-     * Se crea el constructor Pit
+     * This method will help us to put n seeds inside of each square.
      */
-    
-    public Pit (boolean Big){
-        rectangulo1 = new Rectangle();
-        rectangulo2 = new Rectangle();
-        rectangulo1.changeColor("black");
-        rectangulo2.changeColor("blue");
-        rectangulo1.changeSize(100, 100);
-        rectangulo2.changeSize(80, 80);
-        rectangulo2.setxPosition(x);
-        rectangulo2.setyPosition(y);
-  
-    }
-    
-    public void putSeeds(int seeds){    
-        seedxPosition=x;
-        seedyPosition=y;
-        for(int i=0; i<seeds;i++){
-            if(k > 72){
-                return;
-            }
-            Rectangle rectangulo3 = new Rectangle();
-            rectangulo3.changeColor("green");
-            rectangulo3.changeSize(15, 15);
-            Seeds.add(rectangulo3);
-            rectangulo3.makeVisible();
-            rectangulo3.setxPosition(seedxPosition + j);
-            rectangulo3.setyPosition(seedyPosition + k);
-            j+=20;
-            if (j > 72){
-                j=0;
-                k+=20;
-            }
+    public void putSeeds(int count) {
+        for (int i = 0; i < count; i++) {
+            putSeed(seedColor); // Usar el color original del pozo
         }
-        
-    }
-
-    public void removeSeeds(int seeds){
-        int eliminadas=0;
-        while (!Seeds.isEmpty() && eliminadas < seeds) {
-            Rectangle lastSeed = Seeds.remove(Seeds.size() - 1);
-            lastSeed.makeInvisible();
-            eliminadas+=1;
-        }
-        
-        j = (Seeds.size() % 4) * 20;
-        k = (Seeds.size() / 4) * 20;
-    }
-
-    public int seeds(){
-        return Seeds.size();
     }
     
-    public void changeColor(String newColor, String seedsColor){
-        rectangulo2.makeInvisible();
-        rectangulo1.changeColor(newColor);
-        rectangulo2.makeVisible();
-        
-        for(Rectangle seed: Seeds){
+    /**
+     * This method will help us to save the color of the eliminated seed in a array 
+     */
+    public ArrayList<String> removeSeedsAndGetColors() {
+        ArrayList<String> removedColors = new ArrayList<>();
+        while (!seeds.isEmpty()) {
+            Rectangle seed = seeds.remove(seeds.size() - 1);
+            removedColors.add(seed.getColor()); // Obtener el color antes de eliminar
             seed.makeInvisible();
-            seed.changeColor(seedsColor); 
+        }
+        return removedColors;
+    }
+    
+    /**
+     * This method will create the seed setting the color, size, visibility and position of each one
+     */
+    public void putSeed(String color) {
+        Rectangle seed = new Rectangle();
+        seed.changeColor(color);
+        seed.changeSize(15, 15);
+        seeds.add(seed);
+        seed.makeVisible();
+        updateSeedPositions();
+    }
+    
+    /**
+     * This method will remove n seeds of the square.
+     */    
+    public void removeSeeds(int count) {
+        for (int i = 0; i < count && !seeds.isEmpty(); i++) {
+            Rectangle seed = seeds.remove(seeds.size() - 1);
+            seed.makeInvisible();
+        }
+    }
+
+    /**
+     * This method will return the size of the array.
+     */
+    public int seeds() {
+        return seeds.size();
+    }
+
+    /**
+     * This method will return the initial color of the seeds.
+     */
+    public String getOriginalSeedColor() {
+        return seedColor;
+    }
+
+    /**
+     * This method will move the squares to the desired position.
+     */
+    public void moveTo(int x, int y) {
+        this.x = x;
+        this.y = y;
+        rect1.setxPosition(x);
+        rect1.setyPosition(y);
+        rect2.setxPosition(x + 5);
+        rect2.setyPosition(y + 5);
+        updateSeedPositions();
+    }
+    
+    /*
+     * This method will update the last seed position, this is useful when you add and delete seeds from squares, this method save the last seed position.
+     */
+    private void updateSeedPositions() {
+        int seedX = x + 10, seedY = y + 10;
+        int spacing = 20, cols = isBig ? 4 : 4; // Mayor capacidad en almacenes
+        int j = 0, k = 0;
+        for (Rectangle seed : seeds) {
+            seed.setxPosition(seedX + j * spacing);
+            seed.setyPosition(seedY + k * spacing);
+            j++;
+            if (j >= cols) {
+                j = 0;
+                k++;
+            }
+        }
+    }
+
+    /**
+     * This method will make visible the squares and seeds.
+     */
+    public void makeVisible() {
+        rect1.makeVisible();
+        rect2.makeVisible();
+        for (Rectangle seed : seeds) {
             seed.makeVisible();
         }
-        
     }
     
-    public void moveTo(int xPosition, int yPosition){
-        rectangulo1.setxPosition(xPosition);
-        rectangulo1.setyPosition(yPosition);
-        rectangulo2.setxPosition(xPosition + 10);
-        rectangulo2.setyPosition(yPosition + 10);
-        
-        x= xPosition + 10;
-        y= yPosition + 10;
-        
-        int j=0;
-        int k=0;
-        for(Rectangle seed: Seeds){
-            seed.setxPosition(xPosition + j + 10);
-            seed.setyPosition(yPosition + k + 10);
-            j+=20;
-            if(j>72){
-                j=0;
-                k+=20;
-            }
+    /**
+     * This method will delete the current position of the seeds, create new seeds and make sure their positions are correct.
+     */
+    public void setSeeds(int n) {
+        seeds.clear();  // Elimina las semillas actuales
+        for (int i = 0; i < n; i++) {
+            Rectangle seed = new Rectangle();
+            seed.changeColor(seedColor); // Usa el color original de la semilla
+            seed.changeSize(15, 15);
+            seeds.add(seed);
         }
+        updateSeedPositions(); // Asegurar que las semillas están bien ubicadas
     }
     
-        public void makeVisible(){
-        rectangulo1.makeVisible();
-        rectangulo2.makeVisible();
-    }
-    
-    public void makeInvisible(){
-        rectangulo1.makeInvisible();
-        rectangulo2.makeInvisible();
+    /**
+     * This method will make invisible the squares and seeds.
+     */
+    public void makeInvisible() {
+        rect1.makeInvisible();
+        rect2.makeInvisible();
+        for (Rectangle seed : seeds) {
+            seed.makeInvisible();
+        }
     }
     
 }
+
+
+
+
+
