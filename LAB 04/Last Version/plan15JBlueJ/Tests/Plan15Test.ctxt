@@ -1,0 +1,35 @@
+#BlueJ class context
+comment0.target=Plan15Test
+comment0.text=\r\n\ The\ test\ class\ Plan15Test.\r\n\r\n\ @author\ \ Daniel\ Useche\ &\ Daniel\ Pati\u00F1o\r\n
+comment1.params=
+comment1.target=void\ shouldAddCourseWithValidValues()
+comment10.params=
+comment10.target=void\ shouldFailWhenIfNameAndInitialsAreTheSame()
+comment11.params=
+comment11.target=void\ shouldFailNameDoesNotExist()
+comment12.params=
+comment12.target=void\ shouldFailNumberNotInteger()
+comment13.params=
+comment13.target=void\ shouldFailIfOutOfRange()
+comment14.params=
+comment14.target=void\ shouldFailCodeDoesNotExist()
+comment15.params=
+comment15.target=void\ shouldFailSearch()
+comment2.params=
+comment2.target=void\ shouldAddCoreWithValidValues()
+comment3.params=
+comment3.target=void\ addCourseWithExistingCore()
+comment4.params=
+comment4.target=void\ shouldAddCoreAndCourseSuccessfully()
+comment5.params=
+comment5.target=void\ shouldAddSecondCoreAndCourseSuccessfully()
+comment6.params=
+comment6.target=void\ shouldSearch()
+comment6.text=\r\n\ \ \ \ @Test\r\n\ \ \ \ public\ void\ shouldDoToString()\ {\r\n\ \ \ \ \ \ \ \ try{\r\n\ \ \ \ \ \ \ \ \ \ \ \ Plan15\ plan\ \=\ new\ Plan15();\r\n\ \ \ \ \ \ \ \ \ \ \ \ plan.addCourse("IPRO",\ "Introduccion\ a\ la\ programacion",\ "4",\ "4");\r\n\ \ \ \ \r\n\ \ \ \ \ \ \ \ \ \ \ \ //System.out.println("Unidades\ actuales\:\ "\ +\ plan.numberUnits());\r\n\ \ \ \ \ \ \ \ \ \ \ \ //System.out.println("Salida\ real\:\\n"\ +\ plan.toString());\r\n\ \ \ \ \r\n\ \ \ \ \ \ \ \ \ \ \ \ assertEquals("7\ unidades\\n"\ +\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ">PRI1\:\ Proyecto\ Integrador.\ Creditos\:9[3+24]\\n"\ +\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ">DDYA\:\ Dise\u00F1o\ de\ Datos\ y\ Algoritmos.\ Creditos\:4[4+8]\\n"\ +\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ">MPIN\:\ Matematicas\ para\ Informatica.\ Creditos\:3[4+5]\\n"\ +\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ">DOSW\:\ Desarrollo\ y\ Operaciones\ Software.\ Creditos\:4[4+8]\\n"\ +\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ">NFCC\:\ Nucleo\ formacion\ por\ comun\ por\ campo.\ [50%]\\n"\ +\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "\\t>PRI1\:\ Proyecto\ Integrador.\ Creditos\:9[3+24]\\n"\ +\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "\\t>DDYA\:\ Dise\u00F1o\ de\ Datos\ y\ Algoritmos.\ Creditos\:4[4+8]\\n"\ +\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "\\t>MPIN\:\ Matematicas\ para\ Informatica.\ Creditos\:3[4+5]\\n"\ +\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ">NFPE\:\ Nucleo\ de\ formacion\ especifica.\ [100%]\\n"\ +\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "\\t>DOSW\:\ Desarrollo\ y\ Operaciones\ Software.\ Creditos\:4[4+8]\\n"\ +\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ">IPRO\:\ Introduccion\ a\ la\ programacion.\ Creditos\:4[4+8]\\n",\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ plan.toString());\r\n\ \ \ \ \ \ \ \ }catch(Plan15Exception\ e){\r\n\ \ \ \ \ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ }\r\n\ \ \ \ /*\r\n\ \ \ \ @Test\r\n\ \ \ \ public\ void\ shouldDoToStringAddingTwoCourses()\ {\r\n\ \ \ \ \ \ \ try{\r\n\ \ \ \ \ \ \ \ \ \ \ Plan15\ plan\ \=\ new\ Plan15();\r\n\ \ \ \ \ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ \ \ \ plan.addCourse("DOPO",\ "Desarrollo\ Orientado\ a\ Objetos",\ "4",\ "4");\r\n\ \ \ \ \ \ \ \ \ \ \ plan.addCourse("FDSI",\ "Fundamentos\ de\ Seguridad\ de\ la\ Informaci\u00F3n",\ "3",\ "4");\r\n\ \ \ \ \r\n\ \ \ \ \ \ \ \ \ \ \ \ //System.out.println("Unidades\ actuales\:\ "\ +\ plan.numberUnits());\r\n\ \ \ \ \ \ \ \ \ \ \ \ //System.out.println("Salida\ real\:\\n"\ +\ plan.toString());\r\n\ \ \ \ \ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ \ \ \ assertEquals("8\ unidades\\n"\ +\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ">PRI1\:\ Proyecto\ Integrador.\ Creditos\:9[3+24]\\n"\ +\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ">DDYA\:\ Dise\u00F1o\ de\ Datos\ y\ Algoritmos.\ Creditos\:4[4+8]\\n"\ +\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ">MPIN\:\ Matematicas\ para\ Informatica.\ Creditos\:3[4+5]\\n"\ +\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ">DOSW\:\ Desarrollo\ y\ Operaciones\ Software.\ Creditos\:4[4+8]\\n"\ +\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ">NFCC\:\ Nucleo\ formacion\ por\ comun\ por\ campo.\ [50%]\\n"\ +\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "\\t>PRI1\:\ Proyecto\ Integrador.\ Creditos\:9[3+24]\\n"\ +\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "\\t>DDYA\:\ Dise\u00F1o\ de\ Datos\ y\ Algoritmos.\ Creditos\:4[4+8]\\n"\ +\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "\\t>MPIN\:\ Matematicas\ para\ Informatica.\ Creditos\:3[4+5]\\n"\ +\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ">NFPE\:\ Nucleo\ de\ formacion\ especifica.\ [100%]\\n"\ +\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "\\t>DOSW\:\ Desarrollo\ y\ Operaciones\ Software.\ Creditos\:4[4+8]\\n"\ +\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ">DOPO\:\ Desarrollo\ Orientado\ a\ Objetos.\ Creditos\:4[4+8]\\n"\ +\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ">FDSI\:\ Fundamentos\ de\ Seguridad\ de\ la\ Informaci\u00F3n.\ Creditos\:3[4+5]\\n",\ \ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ plan.toString());\r\n\ \ \ \ \ \ \ \ }catch(Plan15Exception\ e){\r\n\ \ \ \ \ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ }\r\n
+comment7.params=
+comment7.target=void\ shouldFailWheniSEmptyName()
+comment8.params=
+comment8.target=void\ shouldFailWhenNonIntegerCredits()
+comment9.params=
+comment9.target=void\ shouldFailWhenPortageIsNotBetween0And100()
+numComments=16
