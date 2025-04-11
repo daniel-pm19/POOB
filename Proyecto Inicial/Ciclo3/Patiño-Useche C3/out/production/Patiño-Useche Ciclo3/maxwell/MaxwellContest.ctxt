@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=MaxwellContest
+comment0.text=\r\n\ Esta\ clase\ contiene\ la\ simulacion\ y\ solucion\ al\ problema\ de\ Maxwell's\ Demon.\r\n\ \r\n\ @author\ Daniel\ Pati\u00F1o\ &\ Daniel\ Useche\r\n\ @version\ Version\ 2.0\r\n
+comment1.params=
+comment1.target=MaxwellContest()
+comment1.text=\r\n\ \r\n\ @param\ \ h\ \ \ define\ la\ altura\ del\ juego.\r\n\ @param\ \ w\ \ \ define\ el\ ancho\ del\ juego.\r\n\ @param\ \ d\ \ \ define\ la\ cantidad\ de\ demonios\ en\ el\ juego.\r\n\ @param\ \ b\ \ \ define\ la\ cantidad\ de\ particulas\ azules.\r\n\ @param\ \ r\ \ \ define\ la\ cantidad\ de\ partiucilas\ rojas.\r\n\ @param\ \ particles\ \ \ define\ las\ caracteristicas\ de\ cada\ particula\ como\ posicion\ y\ velocidad.\r\n\ @return\ \ el\ tiempo\ minimo\ en\ el\ que\ las\ particulas\ estan\ organizadas.\r\n
+comment2.params=w\ h\ d\ r\ b\ particles
+comment2.target=boolean\ solve(int,\ int,\ int,\ int,\ int,\ int[][])
+comment3.params=h\ w\ d\ b\ r\ particles
+comment3.target=void\ simulate(int,\ int,\ int,\ int,\ int,\ int[][])
+comment3.text=\r\n\ El\ metodo\ simulate\ simula\ MaxwellContainer\ con\ los\ parametros\ deseados\r\n\ \r\n\ @param\ \ h\ \ \ define\ la\ altura\ del\ juego.\r\n\ @param\ \ w\ \ \ define\ el\ anch\ \ \ o\ del\ juego.\r\n\ @param\ \ d\ \ \ define\ la\ cantidad\ de\ demonios\ en\ el\ juego.\r\n\ @param\ \ b\ \ \ define\ la\ cantidad\ de\ particulas\ azules.\r\n\ @param\ \ r\ \ \ define\ la\ cantidad\ de\ partiucilas\ rojas.\r\n\ @param\ \ particles\ \ \ define\ las\ caracteristicas\ de\ cada\ particula\ como\ posicion\ y\ velocidad.\r\n
+numComments=4

@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=MaxwellException
+comment0.text=\r\n\ Esta\ clase\ contiene\ las\ excepciones\ de\ Maxwell\r\n\ \r\n\ @author\ Daniel\ Pati\u00F1o\ &\ Daniel\ Useche\r\n\ @version\ Version\ 2.0\r\n
+comment1.params=e
+comment1.target=MaxwellException(java.lang.String)
+numComments=2

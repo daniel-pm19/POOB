@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Weak
+comment0.text=\r\n\ Metodo\ que\ define\ al\ demonio\ debil\r\n\ \r\n\ @author\ Daniel\ Patino\ &\ Daniel\ Useche\r\n\ @version\ 2.0\r\n
+comment1.params=deamonX\ deamonY\ container
+comment1.target=Weak(int,\ int,\ MaxwellContainer)
+comment2.params=deamonX\ deamonY
+comment2.target=void\ settings(int,\ int)
+comment3.params=p\ w
+comment3.target=void\ getAccess(Particle,\ int)
+numComments=4

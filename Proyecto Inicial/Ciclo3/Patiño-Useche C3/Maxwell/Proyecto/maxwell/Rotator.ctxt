@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Rotator
+comment0.text=\r\n\ Metodo\ que\ define\ particula\ rotadora.\r\n\ \r\n\ @author\ Daniel\ Patino\ &\ Daniel\ Useche\r\n\ @version\ 2.0\r\n
+comment1.params=color\ isRed\ x\ y\ vx\ vy
+comment1.target=Rotator(java.lang.String,\ boolean,\ int,\ int,\ int,\ int)
+comment2.params=dt\ width\ height
+comment2.target=void\ move(int,\ int,\ int)
+comment3.params=
+comment3.target=void\ checkCollisions()
+comment4.params=
+comment4.target=void\ handleWallXCollision()
+numComments=5

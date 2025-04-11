@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Ephemeral
+comment0.text=\r\n\ Metodo\ que\ define\ la\ particula\ efimera\r\n\ \r\n\ @author\ Daniel\ Patino\ &\ Daniel\ Useche\r\n\ @version\ 2.0\r\n
+comment1.params=color\ isRed\ x\ y\ vx\ vy
+comment1.target=Ephemeral(java.lang.String,\ boolean,\ int,\ int,\ int,\ int)
+comment1.text=\r\n\ Constructor\ de\ Ephemeral\r\n
+comment2.params=dt\ width\ height
+comment2.target=void\ move(int,\ int,\ int)
+comment3.params=
+comment3.target=void\ checkCollisions()
+comment4.params=
+comment4.target=void\ handleWallXCollision()
+numComments=5

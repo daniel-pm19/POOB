@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=MaxwellContest
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ MaxwellContest\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=u\ h
+comment1.target=double\ reflect(double,\ double)
+comment2.params=px\ py\ vx\ vy\ w\ h\ d
+comment2.target=double\ findMinFlipTime(double,\ double,\ double,\ double,\ double,\ double,\ double)
+comment3.params=w\ h\ d\ r\ b\ particles
+comment3.target=java.lang.String\ solve(int,\ int,\ double,\ int,\ int,\ double[][])
+comment4.params=h\ w\ d\ b\ r\ particles
+comment4.target=void\ simulate(int,\ int,\ int,\ int,\ int,\ int[][])
+comment4.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \r\n
+numComments=5
