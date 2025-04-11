@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Building
+comment0.text=\r\n\ La\ clase\ Building\ representa\ un\ edificio\ en\ la\ ciudad.\r\n\ Cada\ edificio\ tiene\ una\ posici\u00F3n\ espec\u00EDfica\ (fila\ y\ columna)\ y\ est\u00E1\ ubicado\ dentro\ de\ una\ ciudad.\r\n\ La\ clase\ implementa\ la\ interfaz\ `Item`\ para\ integrarse\ con\ otros\ elementos\ de\ la\ ciudad.\r\n
+comment1.params=city\ row\ column
+comment1.target=Building(City,\ int,\ int)
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ Building.\r\n\ Inicializa\ el\ edificio\ con\ un\ color\ negro,\ establece\ su\ posici\u00F3n\ en\ la\ ciudad\r\n\ y\ lo\ coloca\ en\ la\ matriz\ de\ ubicaciones\ de\ la\ ciudad.\r\n\ \r\n\ @param\ city\ La\ ciudad\ donde\ se\ coloca\ el\ edificio.\r\n\ @param\ row\ La\ fila\ de\ la\ posici\u00F3n\ del\ edificio.\r\n\ @param\ column\ La\ columna\ de\ la\ posici\u00F3n\ del\ edificio.\r\n
+comment2.params=
+comment2.target=int\ shape()
+comment3.params=
+comment3.target=void\ change()
+comment3.text=\r\n\ M\u00E9todo\ para\ cambiar\ el\ estado\ del\ edificio\ (a\u00FAn\ no\ implementado).\r\n
+comment4.params=
+comment4.target=void\ decide()
+comment4.text=\r\n\ M\u00E9todo\ para\ tomar\ decisiones\ relacionadas\ con\ el\ edificio\ (a\u00FAn\ no\ implementado).\r\n
+numComments=5

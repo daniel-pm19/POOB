@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Walker
+comment0.text=\r\n\ La\ clase\ Walker\ representa\ a\ una\ persona\ que\ se\ comporta\ de\ una\ manera\ espec\u00EDfica\ en\ la\ ciudad.\r\n\ Un\ "Walker"\ es\ un\ tipo\ de\ persona\ que\ tiene\ un\ color\ verde\ y\ puede\ moverse\ hacia\ el\ norte,\r\n\ adem\u00E1s\ de\ cambiar\ su\ estado\ basado\ en\ la\ cantidad\ de\ vecinos\ en\ su\ vecindad.\r\n\ \r\n\ Esta\ clase\ extiende\ la\ clase\ `Person`\ y\ sobrescribe\ los\ m\u00E9todos\ para\ decidir\ y\ moverse.\r\n
+comment1.params=city\ row\ column
+comment1.target=Walker(City,\ int,\ int)
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ Walker.\r\n\ Inicializa\ un\ objeto\ `Walker`\ en\ la\ ciudad\ especificada,\ en\ la\ fila\ y\ columna\ proporcionadas.\r\n\ El\ color\ del\ Walker\ es\ verde\ y\ su\ estado\ inicial\ es\ "indiferente".\r\n\ \r\n\ @param\ city\ La\ ciudad\ donde\ se\ coloca\ el\ Walker.\r\n\ @param\ row\ La\ fila\ donde\ se\ coloca\ el\ Walker.\r\n\ @param\ column\ La\ columna\ donde\ se\ coloca\ el\ Walker.\r\n
+comment2.params=
+comment2.target=int\ shape()
+comment2.text=\r\n\ Devuelve\ la\ forma\ del\ Walker,\ representada\ como\ un\ valor\ constante.\r\n\ En\ este\ caso,\ la\ forma\ del\ Walker\ es\ cuadrada.\r\n\ \r\n\ @return\ Un\ valor\ entero\ que\ representa\ la\ forma\ del\ Walker\ (constante\ SQUARE).\r\n
+comment3.params=
+comment3.target=void\ decide()
+comment3.text=\r\n\ Toma\ una\ decisi\u00F3n\ basada\ en\ la\ cantidad\ de\ vecinos\ en\ las\ casillas\ adyacentes.\r\n\ Si\ el\ Walker\ tiene\ al\ menos\ un\ vecino\ en\ las\ casillas\ adyacentes,\ su\ estado\ cambia\ a\ "feliz".\r\n\ Si\ no\ tiene\ vecinos,\ su\ estado\ es\ "indiferente".\r\n
+comment4.params=
+comment4.target=void\ change()
+comment4.text=\r\n\ Cambia\ el\ estado\ del\ Walker\ basado\ en\ las\ condiciones\ de\ su\ vecindad.\r\n\ Si\ el\ espacio\ hacia\ el\ norte\ est\u00E1\ ocupado,\ el\ Walker\ cambia\ su\ estado\ a\ "insatisfecho".\r\n\ Si\ el\ espacio\ hacia\ el\ norte\ est\u00E1\ vac\u00EDo,\ el\ Walker\ se\ mueve\ hacia\ all\u00ED.\r\n
+comment5.params=
+comment5.target=void\ move()
+comment5.text=\r\n\ Mueve\ el\ Walker\ hacia\ el\ norte\ (hacia\ la\ fila\ anterior\ en\ la\ ciudad).\r\n\ Este\ m\u00E9todo\ es\ llamado\ dentro\ de\ `change()`\ cuando\ el\ Walker\ puede\ moverse.\r\n
+numComments=6

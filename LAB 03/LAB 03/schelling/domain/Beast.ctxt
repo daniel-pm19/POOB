@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Beast
+comment0.text=\r\n\ La\ clase\ Beast\ representa\ a\ una\ bestia\ en\ la\ ciudad.\r\n\ Este\ objeto\ es\ estatico\ por\ lo\ que\ las\ personas\ que\ pasan\ cerca\ de\ el\ los\ elimina\ de\ la\ ciudad\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=city\ row\ column
+comment1.target=Beast(City,\ int,\ int)
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ Beast.\r\n\ Inicializa\ el\ objeto\ con\ un\ color\ naranja,\ establece\ su\ posici\u00F3n\ en\ la\ ciudad\ y\ lo\ coloca\ en\ la\ matriz\ de\ ubicaciones\ de\ la\ ciudad.\r\n\ @param\ city\ La\ ciudad\ donde\ se\ coloca\ la\ bestia.\r\n\ @param\ row\ La\ fila\ de\ la\ posici\u00F3n\ de\ la\ bestia.\r\n\ @param\ column\ La\ columna\ de\ la\ posici\u00F3n\ de\ la\ bestia.\r\n
+comment2.params=
+comment2.target=int\ shape()
+comment3.params=
+comment3.target=void\ change()
+comment3.text=\r\n\ M\u00E9todo\ para\ cambiar\ el\ estado\ de\ la\ bestia.\r\n
+comment4.params=
+comment4.target=void\ decide()
+comment4.text=\r\n\ M\u00E9todo\ para\ tomar\ decisiones\ relacionadas\ con\ la\ bestia.\r\n
+comment5.params=
+comment5.target=void\ deleteItem()
+comment6.params=
+comment6.target=java.awt.Color\ getColor()
+numComments=7

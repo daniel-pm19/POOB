@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Wallflower
+comment0.text=\r\n\ La\ clase\ Wallflower\ representa\ a\ una\ persona\ tipo\ "Wallflower"\ en\ la\ ciudad.\r\n\ Un\ "Wallflower"\ tiene\ un\ color\ amarillo\ y\ se\ mueve\ hacia\ el\ sur.\ \r\n\ Adem\u00E1s,\ su\ estado\ cambia\ dependiendo\ de\ la\ cantidad\ de\ vecinos\ adyacentes.\r\n\ \r\n\ Esta\ clase\ extiende\ de\ la\ clase\ `Person`\ y\ sobrescribe\ los\ m\u00E9todos\ para\ decidir\ y\ moverse.\r\n
+comment1.params=city\ row\ column
+comment1.target=Wallflower(City,\ int,\ int)
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ Wallflower.\r\n\ Inicializa\ un\ objeto\ `Wallflower`\ en\ la\ ciudad\ especificada,\ en\ la\ fila\ y\ columna\ proporcionadas.\r\n\ El\ color\ del\ Wallflower\ es\ amarillo\ y\ su\ estado\ inicial\ es\ "indiferente".\r\n\ \r\n\ @param\ city\ La\ ciudad\ donde\ se\ coloca\ el\ Wallflower.\r\n\ @param\ row\ La\ fila\ donde\ se\ coloca\ el\ Wallflower.\r\n\ @param\ column\ La\ columna\ donde\ se\ coloca\ el\ Wallflower.\r\n
+comment2.params=
+comment2.target=int\ shape()
+comment2.text=\r\n\ Devuelve\ la\ forma\ del\ Wallflower,\ representada\ como\ un\ valor\ constante.\r\n\ En\ este\ caso,\ la\ forma\ del\ Wallflower\ es\ cuadrada.\r\n\ \r\n\ @return\ Un\ valor\ entero\ que\ representa\ la\ forma\ del\ Wallflower\ (constante\ SQUARE).\r\n
+comment3.params=
+comment3.target=void\ decide()
+comment3.text=\r\n\ Toma\ una\ decisi\u00F3n\ basada\ en\ la\ cantidad\ de\ vecinos\ en\ las\ casillas\ adyacentes.\r\n\ Si\ el\ Wallflower\ tiene\ al\ menos\ un\ vecino\ en\ las\ casillas\ adyacentes,\ su\ estado\ cambia\ a\ "insatisfecho".\r\n\ Si\ no\ tiene\ vecinos,\ su\ estado\ cambia\ a\ "feliz".\r\n
+comment4.params=
+comment4.target=void\ change()
+comment4.text=\r\n\ Cambia\ el\ estado\ del\ Wallflower\ basado\ en\ las\ condiciones\ de\ su\ vecindad.\r\n\ Si\ el\ espacio\ hacia\ el\ sur\ est\u00E1\ ocupado,\ el\ Wallflower\ cambia\ su\ estado\ a\ "insatisfecho".\r\n\ Si\ el\ espacio\ hacia\ el\ sur\ est\u00E1\ vac\u00EDo,\ el\ Wallflower\ se\ mueve\ hacia\ all\u00ED.\r\n
+comment5.params=
+comment5.target=void\ move()
+comment5.text=\r\n\ Mueve\ el\ Wallflower\ hacia\ el\ sur\ (hacia\ la\ fila\ siguiente\ en\ la\ ciudad).\r\n\ Este\ m\u00E9todo\ es\ llamado\ dentro\ de\ `change()`\ cuando\ el\ Wallflower\ puede\ moverse.\r\n
+numComments=6

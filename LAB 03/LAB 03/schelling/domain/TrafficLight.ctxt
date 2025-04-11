@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=TrafficLight
+comment0.text=\r\n\ La\ clase\ TrafficLight\ representa\ un\ sem\u00E1foro\ en\ la\ ciudad.\r\n\ El\ sem\u00E1foro\ tiene\ un\ color\ que\ cambia\ peri\u00F3dicamente\ de\ rojo\ a\ verde\ y\ amarillo\ en\ un\ ciclo\ de\ 3\ tiempos.\r\n\ La\ clase\ implementa\ la\ interfaz\ `Item`\ para\ integrarse\ con\ otros\ elementos\ de\ la\ ciudad.\r\n
+comment1.params=city\ row\ column
+comment1.target=TrafficLight(City,\ int,\ int)
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ TrafficLight.\r\n\ Inicializa\ el\ sem\u00E1foro\ con\ un\ color\ rojo,\ establece\ la\ posici\u00F3n\ en\ la\ ciudad\r\n\ y\ coloca\ el\ sem\u00E1foro\ en\ la\ matriz\ de\ ubicaciones\ de\ la\ ciudad.\r\n\ \r\n\ @param\ city\ La\ ciudad\ donde\ se\ coloca\ el\ sem\u00E1foro.\r\n\ @param\ row\ La\ fila\ de\ la\ posici\u00F3n\ del\ sem\u00E1foro.\r\n\ @param\ column\ La\ columna\ de\ la\ posici\u00F3n\ del\ sem\u00E1foro.\r\n
+comment2.params=
+comment2.target=void\ change()
+comment2.text=\r\n\ Incrementa\ el\ tiempo\ del\ sem\u00E1foro.\ Este\ m\u00E9todo\ es\ llamado\ en\ cada\ ciclo\ de\ tiempo\ para\ actualizar\ el\ estado\ del\ sem\u00E1foro.\r\n
+comment3.params=
+comment3.target=void\ decide()
+comment3.text=\r\n\ Decide\ el\ color\ del\ sem\u00E1foro\ basado\ en\ el\ tiempo\ transcurrido.\r\n\ El\ sem\u00E1foro\ sigue\ un\ ciclo\:\ cada\ 3\ pasos\ el\ color\ cambia\ de\ la\ siguiente\ manera\:\r\n\ -\ 0\:\ Amarillo\r\n\ -\ 1\:\ Verde\r\n\ -\ 2\:\ Rojo\r\n
+comment4.params=
+comment4.target=java.awt.Color\ getColor()
+comment4.text=\r\n\ Obtiene\ el\ color\ actual\ del\ sem\u00E1foro.\r\n\ \r\n\ @return\ El\ color\ actual\ del\ sem\u00E1foro.\r\n
+numComments=5
