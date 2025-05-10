@@ -1,0 +1,10 @@
+Person 11 11
+Walker 12 15  
+Beast 22 21      
+Person 4 4
+TrafficLight 2 2 
+Person 6 16     
+Beast 3 3  
+Building 15 1    
+Beast 1 4               
+Walker 21 21

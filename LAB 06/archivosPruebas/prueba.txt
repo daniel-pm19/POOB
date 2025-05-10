@@ -1,0 +1,16 @@
+TrafficLight 0 0
+TrafficLight 0 24
+Walker 1 24
+Beast 3 20
+Walker 4 6
+Walker 4 21
+Person 7 3
+Wallflower 7 5
+Walker 7 14
+Building 7 15
+Building 8 5
+Person 10 10
+Person 11 21
+Walker 14 4
+Person 15 15
+Beast 19 19
